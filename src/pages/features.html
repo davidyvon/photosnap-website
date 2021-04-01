@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Photosnap - A 4 pages portfolio website for a fictional photography platform. Coded by David Yvon"
+		/>
+		<link rel="icon" type="image/png" href="./assets/static/favicon.ico" sizes="32x32" />
+		<title>Photosnap - Features</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="modal" id="modal"></div>
+
+			<!-------------------- HEADER -------------------->
+
+			<header class="header">
+				<a class="header__logo" href="index.html"><img src="./assets/static/logo.svg" alt="photosnap logo" /></a>
+
+				<div class="nav-container" id="nav">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a class="nav__link" href="stories.html">Stories</a></li>
+							<li class="nav__item"><a class="nav__link" href="features.html">Features</a></li>
+							<li class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></li>
+						</ul>
+					</nav>
+
+					<a class="button button--header" href="#!">Get an invite</a>
+				</div>
+
+				<div class="nav-control">
+					<div class="hamburger" id="hamburger">
+						<svg
+							class="hamburger__icon"
+							width="20px"
+							height="20px"
+							viewBox="0 0 48 48"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g class="hamburger__lines hamburger__lines--top">
+								<line class="hamburger__line" x1="0" y1="17" x2="48" y2="17" stroke-width="2" />
+								<line class="hamburger__line" x1="0" y1="31" x2="48" y2="31" stroke-width="2" />
+							</g>
+
+							<g class="hamburger__lines hamburger__lines--bottom">
+								<line class="hamburger__line" x1="0" y1="24" x2="48" y2="24" stroke-width="2" />
+								<line class="hamburger__line" x1="0" y1="24" x2="48" y2="24" stroke-width="2" />
+							</g>
+						</svg>
+					</div>
+				</div>
+			</header>
+
+			<!-------------------- MAIN -------------------->
+
+			<main>
+				<!-------------------- HERO - FEATURES PAGE -------------------->
+
+				<section class="hero">
+					<div class="hero__image hero__image--features"></div>
+					<article class="hero__article hero__article--small">
+						<div class="hero__content">
+							<h1 class="hero__heading">Features</h1>
+							<p class="hero__text">
+								We make sure all of our features are designed to be loved by every aspiring and even professional
+								photograpers who wanted to share their stories.
+							</p>
+						</div>
+					</article>
+				</section>
+			</main>
+
+			<!-------------------- FEATURES - FEATURES PAGE -------------------->
+
+			<section class="features--big">
+				<article class="feature">
+					<img class="feature__image" src="./assets/static/content/features/desktop/responsive.svg" alt="" />
+					<h3 class="feature__title">100% Responsive</h3>
+					<p class="feature__text">
+						No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.
+					</p>
+				</article>
+
+				<article class="feature">
+					<img class="feature__image" src="./assets/static/content/features/desktop/no-limit.svg" alt="" />
+					<h3 class="feature__title">No Photo Upload Limit</h3>
+					<p class="feature__text">
+						Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one
+						go.
+					</p>
+				</article>
+
+				<article class="feature">
+					<img class="feature__image" src="./assets/static/content/features/desktop/embed.svg" alt="" />
+					<h3 class="feature__title">Available to Embed</h3>
+					<p class="feature__text">
+						Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.
+					</p>
+				</article>
+
+				<article class="feature">
+					<img class="feature__image" src="./assets/static/content/features/desktop/custom-domain.svg" alt="" />
+					<h3 class="feature__title">Custom Domain</h3>
+					<p class="feature__text">
+						With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!
+					</p>
+				</article>
+
+				<article class="feature">
+					<img class="feature__image" src="./assets/static/content/features/desktop/boost-exposure.svg" alt="" />
+					<h3 class="feature__title">Boost Your Exposure</h3>
+					<p class="feature__text">
+						Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in
+						mailing list.
+					</p>
+				</article>
+
+				<article class="feature">
+					<img class="feature__image" src="./assets/static/content/features/desktop/drag-drop.svg" alt="" />
+					<h3 class="feature__title">Drag & Drop Image</h3>
+					<p class="feature__text">
+						Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction
+						to creating stories.
+					</p>
+				</article>
+			</section>
+
+			<!-------------------- CTA -------------------->
+
+			<section class="cta">
+				<div class="cta__image"></div>
+				<h2 class="cta__heading">We're in Beta. Get your invite today!</h2>
+				<a class="button button--cta" href="#!"
+					>Get an invite<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+				/></a>
+			</section>
+
+			<!-------------------- FOOTER -------------------->
+
+			<footer class="footer">
+				<div class="footer-container--left">
+					<a href="index.html">
+						<img class="footer__logo" src="./assets/static/logo-white.svg" alt="photosnap logo" />
+					</a>
+
+					<nav class="social">
+						<ul class="social__list">
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/facebook.svg" alt="facebook"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/youtube.svg" alt="youtube"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/twitter.svg" alt="twitter"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/pinterest.svg" alt="pinterest"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/instagram.svg" alt="instagram"
+								/></a>
+							</li>
+						</ul>
+					</nav>
+
+					<nav class="footer-nav">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item"><a class="footer-nav__link" href="index.html">Home</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="stories.html">Stories</a></li>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="features.html">Features</a>
+							</li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="pricing.html">Pricing</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="footer-container--right">
+					<a class="button button--footer" href="#!"
+						>Get an invite<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+					/></a>
+
+					<small class="footer__credentials">Copyright 2019. All Rights Reserved</small>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

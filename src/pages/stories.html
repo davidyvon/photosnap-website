@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Photosnap - A 4 pages portfolio website for a fictional photography platform. Coded by David Yvon"
+		/>
+		<link rel="icon" type="image/png" href="./assets/static/favicon.ico" sizes="32x32" />
+		<title>Photosnap - Stories</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="modal" id="modal"></div>
+
+			<!-------------------- HEADER -------------------->
+
+			<header class="header">
+				<a class="header__logo" href="index.html"><img src="./assets/static/logo.svg" alt="photosnap logo" /></a>
+
+				<div class="nav-container" id="nav">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a class="nav__link" href="stories.html">Stories</a></li>
+							<li class="nav__item"><a class="nav__link" href="features.html">Features</a></li>
+							<li class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></li>
+						</ul>
+					</nav>
+
+					<a class="button button--header" href="#!">Get an invite</a>
+				</div>
+
+				<div class="nav-control">
+					<div class="hamburger" id="hamburger">
+						<svg
+							class="hamburger__icon"
+							width="20px"
+							height="20px"
+							viewBox="0 0 48 48"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g class="hamburger__lines hamburger__lines--top">
+								<line class="hamburger__line" x1="0" y1="17" x2="48" y2="17" stroke-width="2" />
+								<line class="hamburger__line" x1="0" y1="31" x2="48" y2="31" stroke-width="2" />
+							</g>
+
+							<g class="hamburger__lines hamburger__lines--bottom">
+								<line class="hamburger__line" x1="0" y1="24" x2="48" y2="24" stroke-width="2" />
+								<line class="hamburger__line" x1="0" y1="24" x2="48" y2="24" stroke-width="2" />
+							</g>
+						</svg>
+					</div>
+				</div>
+			</header>
+
+			<!-------------------- MAIN -------------------->
+
+			<main class="main">
+				<!-------------------- HERO - STORIES PAGE -------------------->
+
+				<section class="hero-stories">
+					<div class="hero-stories__image"></div>
+
+					<div class="hero-stories__content">
+						<h2 class="hero-stories__title">Last month's featured story</h2>
+						<h1 class="hero-stories__heading">Hazy full moon of Appalachia</h1>
+						<p class="hero-stories__date">March 2nd 2020 <span class="hero-stories__author">by John Appleseed</span></p>
+						<p class="hero-stories__text">
+							The dissected plateau area, while not actually made up of geological mountains, is popularly called
+							"mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the
+							terrain is extremely rugged.
+						</p>
+						<a class="button button--hero-stories" href="#!"
+							>Read the story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+						/></a>
+					</div>
+				</section>
+
+				<!-------------------- STORIES - STORIES PAGE -------------------->
+
+				<section class="stories">
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">April 16th 2020</p>
+							<h3 class="card__title">The Mountains</h3>
+							<p class="card__author">by John Appleseed</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/mountains.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/mountains.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/mountains.jpg" alt="mountains" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">April 14th 2020</p>
+							<h3 class="card__title">Sunset Cityscapes</h3>
+							<p class="card__author">by Benjamin Cruz</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/cityscapes.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/cityscapes.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/cityscapes.jpg" alt="cityscapes" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">April 11th 2020</p>
+							<h3 class="card__title">18 Days Voyage</h3>
+							<p class="card__author">by Alexei Borodin</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/18-days-voyage.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/18-days-voyage.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/18-days-voyage.jpg" alt="traveler" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">April 9th 2020</p>
+							<h3 class="card__title">Architecturals</h3>
+							<p class="card__author">by Samantha Brooke</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/architecturals.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/architecturals.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/architecturals.jpg" alt="building" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">April 7th 2020</p>
+							<h3 class="card__title">World Tour 2019</h3>
+							<p class="card__author">by Timothy Wagner</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/world-tour.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/world-tour.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/world-tour.jpg" alt="lac" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">April 3rd 2020</p>
+							<h3 class="card__title">Unforeseen Corners</h3>
+							<p class="card__author">by William Malcolm</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source
+								media="(min-width:1200px)"
+								srcset="./assets/static/content/stories/desktop/unforeseen-corners.jpg"
+							/>
+							<source
+								media="(min-width:768px)"
+								srcset="./assets/static/content/stories/mobile/unforeseen-corners.jpg"
+							/>
+							<img class="card__image" src="./assets/static/content/stories/mobile/unforeseen-corners.jpg" alt="tree" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">March 29th 2020</p>
+							<h3 class="card__title">King on Africa: Part II</h3>
+							<p class="card__author">by Tim Hillenburg</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/king-on-africa.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/king-on-africa.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/king-on-africa.jpg" alt="lion" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">March 21st 2020</p>
+							<h3 class="card__title">The Trip to Nowhere</h3>
+							<p class="card__author">by Felicia Rourke</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/trip-to-nowhere.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/trip-to-nowhere.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/trip-to-nowhere.jpg" alt="tree" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">March 19th 2020</p>
+							<h3 class="card__title">Rage of The Sea</h3>
+							<p class="card__author">by Mohammed Abdul</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/rage-of-the-sea.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/rage-of-the-sea.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/rage-of-the-sea.jpg" alt="ocean" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">March 16th 2020</p>
+							<h3 class="card__title">Running Free</h3>
+							<p class="card__author">by Michelle</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/running-free.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/running-free.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/running-free.jpg" alt="horses" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">March 11th 2020</p>
+							<h3 class="card__title">Behind the Waves</h3>
+							<p class="card__author">by Lamarr Wilson</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source
+								media="(min-width:1200px)"
+								srcset="./assets/static/content/stories/desktop/behind-the-waves.jpg"
+							/>
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/behind-the-waves.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/behind-the-waves.jpg" alt="waves" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">March 9th 2020</p>
+							<h3 class="card__title">Calm Waters</h3>
+							<p class="card__author">by Samantha Brooke</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/calm-waters.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/calm-waters.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/calm-waters.jpg" alt="lac" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">March 5th 2020</p>
+							<h3 class="card__title">The Milky Way</h3>
+							<p class="card__author">by Benjamin Cruz</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/milky-way.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/milky-way.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/milky-way.jpg" alt="sky" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">March 4th 2020</p>
+							<h3 class="card__title">Night at The Dark Forest</h3>
+							<p class="card__author">by Mohammed Abdul</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/dark-forest.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/dark-forest.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/dark-forest.jpg" alt="forest" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">March 1st 2020</p>
+							<h3 class="card__title">Somwarpet’s Beauty</h3>
+							<p class="card__author">by Michelle</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/somwarpet.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/somwarpet.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/somwarpet.jpg" alt="flowers" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+
+					<article class="card">
+						<div class="card__container">
+							<p class="card__date">February 25th 2020</p>
+							<h3 class="card__title">Land of Dreams</h3>
+							<p class="card__author">by William Malcolm</p>
+							<a class="button button--read-story" href="#!"
+								>Read Story<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+							/></a>
+						</div>
+
+						<picture class="card__picture">
+							<source media="(min-width:1200px)" srcset="./assets/static/content/stories/desktop/land-of-dreams.jpg" />
+							<source media="(min-width:768px)" srcset="./assets/static/content/stories/mobile/land-of-dreams.jpg" />
+							<img class="card__image" src="./assets/static/content/stories/mobile/land-of-dreams.jpg" alt="church" />
+						</picture>
+
+						<a class="card__link" href="#!"></a>
+					</article>
+				</section>
+			</main>
+
+			<!-------------------- FOOTER -------------------->
+
+			<footer class="footer">
+				<div class="footer-container--left">
+					<a href="/index.html">
+						<img class="footer__logo" src="./assets/static/logo-white.svg" alt="photosnap logo" />
+					</a>
+
+					<nav class="social">
+						<ul class="social__list">
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/facebook.svg" alt="facebook"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/youtube.svg" alt="youtube"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/twitter.svg" alt="twitter"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/pinterest.svg" alt="pinterest"
+								/></a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="#!"
+									><img class="social__icon" src="./assets/static/icons/instagram.svg" alt="instagram"
+								/></a>
+							</li>
+						</ul>
+					</nav>
+
+					<nav class="footer-nav">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item"><a class="footer-nav__link" href="index.html">Home</a></li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="stories.html">Stories</a></li>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="features.html">Features</a>
+							</li>
+							<li class="footer-nav__item"><a class="footer-nav__link" href="pricing.html">Pricing</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="footer-container--right">
+					<a class="button button--footer" href="#!"
+						>Get an invite<img class="button__icon" src="./assets/static/icons/arrow.svg" alt=""
+					/></a>
+
+					<small class="footer__credentials">Copyright 2019. All Rights Reserved</small>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

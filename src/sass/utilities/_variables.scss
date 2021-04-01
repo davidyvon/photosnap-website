@@ -1,0 +1,15 @@
+$black: hsl(0deg, 0%, 0%);
+$grey: hsl(0deg, 0%, 87%);
+$light-grey: hsl(0deg, 0%, 96%);
+$white: hsl(0deg, 0%, 100%);
+
+$regular: 400;
+$bold: 700;
+
+$accent: linear-gradient(45deg, rgba(255, 197, 147, 1) 0%, rgba(188, 113, 152, 1) 50%, rgba(90, 119, 255, 1) 100%);
+$accent-radial: radial-gradient(
+	circle,
+	rgba(255, 197, 147, 1) 0%,
+	rgba(188, 113, 152, 0.5) 50%,
+	rgba(90, 119, 255, 0.4) 100%
+);

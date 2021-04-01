@@ -1,0 +1,252 @@
+// ------------------------------------------------------------
+//  TOGGLE - PRICING CARDS
+// ------------------------------------------------------------
+
+.toggle {
+	margin-bottom: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include media-xl {
+		margin-bottom: 4.8rem;
+	}
+}
+
+.toggle__label {
+	font-size: 1.8rem;
+	font-weight: $bold;
+	line-height: 2.5rem;
+}
+
+.toggle__label--monthly,
+.toggle__label--yearly {
+	color: $black;
+	opacity: 0.5;
+	transition: opacity 0.3s ease;
+
+	&.active {
+		opacity: 1;
+	}
+}
+
+.toggle__input {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+
+	&:checked + .toggle__switch {
+		background: $black;
+	}
+
+	&:checked + .toggle__switch::after {
+		background: $white;
+		left: calc(100% - 5px);
+		transform: translateX(-100%);
+	}
+}
+
+.toggle__switch {
+	display: block;
+	position: relative;
+	height: 3.2rem;
+	width: 6.4rem;
+	margin: 0 3.2rem;
+	border-radius: 100rem;
+	background: $grey;
+	cursor: pointer;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 3px;
+		left: 4px;
+		height: 2.6rem;
+		width: 2.6rem;
+		border-radius: 100rem;
+		background: $black;
+		transition: 0.3s ease-in;
+	}
+
+	&:active::after {
+		width: 4rem;
+	}
+}
+
+// ------------------------------------------------------------
+//  PRICING CARDS
+// ------------------------------------------------------------
+
+.price {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 6.4rem;
+
+	@include media-md {
+		margin-bottom: 11.2rem;
+	}
+
+	@include media-xl {
+		flex-direction: row;
+		margin-bottom: 16rem;
+	}
+}
+
+.price__card {
+	position: relative;
+	display: grid;
+	justify-items: center;
+	text-align: center;
+	height: 40.7rem;
+	padding: 5.6rem 4rem;
+	margin-bottom: 2.4rem;
+	background: $light-grey;
+
+	&--pro {
+		background: $black;
+
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			height: 0.6rem;
+			width: 100%;
+			background: $accent;
+
+			@include media-md {
+				top: 0;
+				left: 0;
+				height: 27rem;
+				width: 0.6rem;
+			}
+
+			@include media-xl {
+				top: 0;
+				left: 0;
+				height: 0.6rem;
+				width: 100%;
+			}
+		}
+	}
+
+	@include media-md {
+		grid-template-columns: repeat(2, auto);
+		grid-row: 5rem auto auto;
+		text-align: left;
+		justify-items: left;
+		height: 27rem;
+		width: 68.9rem;
+		padding: 4rem;
+		margin: 0 4rem 2.4rem 4rem;
+	}
+
+	@include media-xl {
+		display: block;
+		text-align: center;
+		justify-items: center;
+		height: 40.7rem;
+		max-width: 35rem;
+		margin: 0;
+
+		&:not(:last-child) {
+			margin-right: 3rem;
+		}
+
+		&--pro {
+			height: 47rem;
+			padding: 7.1rem 4rem 7rem 4rem;
+		}
+	}
+}
+
+.price__level {
+	font-size: 2.4rem;
+	line-height: 2.5rem;
+	font-weight: $bold;
+	color: $black;
+	margin-bottom: 1.8rem;
+
+	&--pro {
+		color: $white;
+	}
+
+	@include media-md {
+		grid-column: 1;
+		grid-row: 1;
+	}
+}
+
+.price__description {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	font-weight: $regular;
+	width: 27rem;
+	margin-bottom: 4rem;
+	opacity: 0.6;
+	color: $black;
+
+	&--pro {
+		color: $white;
+		opacity: 0.6;
+	}
+
+	@include media-md {
+		grid-column: 1;
+		grid-row: 2;
+		margin-bottom: 0;
+		transform: translateY(-3rem);
+	}
+
+	@include media-xl {
+		margin-bottom: 4rem;
+		transform: translateY(0);
+	}
+}
+
+.price__month,
+.price__year {
+	font-size: 4rem;
+	line-height: 4.8rem;
+	letter-spacing: 0.4rem;
+	font-weight: $bold;
+	color: $black;
+	display: none;
+
+	&.active {
+		display: block;
+	}
+
+	&--pro {
+		color: $white;
+	}
+
+	@include media-md {
+		grid-column: 2;
+		grid-row: 1;
+		justify-self: end;
+	}
+}
+
+.price__detail {
+	display: block;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	letter-spacing: 0;
+	font-weight: $regular;
+	columns: $black;
+	opacity: 0.6;
+	margin-bottom: 4rem;
+
+	@include media-md {
+		margin-bottom: 0;
+		text-align: right;
+	}
+
+	@include media-xl {
+		margin-bottom: 4rem;
+		text-align: center;
+	}
+}

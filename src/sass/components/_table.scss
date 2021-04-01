@@ -1,0 +1,149 @@
+// ------------------------------------------------------------
+//  COMPARE PAGE
+// ------------------------------------------------------------
+
+.compare {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 4rem 6.4rem 4rem;
+
+	@include media-md {
+		margin-bottom: 11.2rem;
+	}
+
+	@include media-xl {
+		margin-bottom: 16rem;
+	}
+}
+
+.compare__heading {
+	display: none;
+
+	@include media-md {
+		display: block;
+		font-size: 4rem;
+		font-weight: $bold;
+		line-height: 2.8rem;
+		letter-spacing: 0.4rem;
+		text-transform: uppercase;
+		margin-bottom: 6.4rem;
+		color: $black;
+	}
+
+	@include media-xl {
+		margin-bottom: 5.6rem;
+	}
+}
+
+// ------------------------------------------------------------
+//  TABLE DESKTOP
+// ------------------------------------------------------------
+
+.table--desktop {
+	display: none;
+
+	@include media-md {
+		display: block;
+	}
+}
+
+.table {
+	border-collapse: collapse;
+	table-layout: auto;
+}
+
+.table__heading {
+	font-size: 1.2rem;
+	font-weight: $bold;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	width: 14rem;
+	color: $black;
+	padding-bottom: 2.4rem;
+	border-bottom: 2px solid $black;
+
+	&:first-child {
+		text-align: left;
+	}
+}
+
+.table__row {
+	border-bottom: 2px solid $light-grey;
+}
+
+.table__data {
+	font-size: 1.2rem;
+	font-weight: $bold;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	color: $black;
+	margin: 0 auto;
+	padding: 2.4rem 0;
+}
+
+.table__title {
+	@include media-md {
+		width: 30rem;
+	}
+
+	@include media-xl {
+		width: 35rem;
+	}
+}
+
+.table__checkmark {
+	background-image: url('/src/assets/static/content/pricing/desktop/check.svg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 1.2rem;
+	width: 1.6rem;
+	margin: 0 auto;
+}
+
+// ------------------------------------------------------------
+//  TABLE MOBILE
+// ------------------------------------------------------------
+
+.table--mobile {
+	width: 100%;
+
+	@include media-md {
+		display: none;
+	}
+}
+
+.table__sub-title {
+	font-size: 1rem;
+	font-weight: $bold;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	color: $black;
+	opacity: 0.5;
+	margin-bottom: 0.8rem;
+}
+
+.table__row--mobile {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+}
+
+.table__title--mobile {
+	grid-column: 1 / -1;
+	grid-row: 1;
+	margin: 0;
+	padding-bottom: 0;
+}
+
+.table__data--mobile {
+	grid-row: 2;
+	justify-content: start;
+	margin: 0;
+}
+
+.table__checkmark--mobile {
+	margin: 0;
+}
