@@ -2,11 +2,11 @@
 
 A 4 pages website for a fictional photography platform
 
-[<img src="./src/assets/static/readme/preview.png">](https://davidyvon.github.io/photosnap-website/)
+[<img src="./src/assets/static/readme/preview.png">](https://photosnap.davidyvon.com/)
 
 ## Hi ! 👋
 
-**Thanks for checking out this [project](https://davidyvon.github.io/photosnap-website/) !**
+**Thanks for checking out this [project](https://photosnap.davidyvon.com/) !**
 
 ## General info
 
